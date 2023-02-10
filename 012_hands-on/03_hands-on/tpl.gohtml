@@ -1,0 +1,10 @@
+My template.
+
+{{range .}}
+  {{.Name}}
+  {{range .Hotels}}
+    {{.Name}}
+    {{.Address}}
+    {{.City}}, CA, {{.Zip}}
+  {{end}}
+{{end}}

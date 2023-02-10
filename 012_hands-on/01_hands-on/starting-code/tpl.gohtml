@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
 </head>
+
 <body>
 
-{{range .}}
-
-<!-- PUT YOUR CODE HERE TO SHOW THE DATA-->
-
-{{end}}
+  {{range .}}
+    {{.AcaYear}}
+    
+    {{range .Fall.Courses}}
+      {{.Number}} {{.Name}}; Units {{.Units}} 
+    {{end}}
+    {{range .Spring.Courses}}
+      {{.Number}} {{.Name}}; Units {{.Units}} 
+    {{end}}
+  {{end}}
 
 </body>
+
 </html>
